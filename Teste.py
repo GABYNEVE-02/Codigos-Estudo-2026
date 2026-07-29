@@ -7,3 +7,4 @@ while True:
             break
         else:
             print("Você não digitou 1.")
+print("Fim do teste.")
