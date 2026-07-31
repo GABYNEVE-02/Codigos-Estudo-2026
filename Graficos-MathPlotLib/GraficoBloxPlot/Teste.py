@@ -1,9 +1,10 @@
-from math import pi
 import os
+from math import pi
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import scipy.stats as stats
+from scipy import stats
 
 pasta_atual = os.path.dirname(os.path.abspath(__file__))
 caminho_csv = os.path.join(pasta_atual, "seeds.csv")
@@ -42,5 +43,3 @@ plt.title("Length Boxplot")
 plt.ylabel("Length Distribution")
 
 plt.show()
-
-
