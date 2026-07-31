@@ -1,4 +1,3 @@
-# Sistema-Solar-Python
-# Projeto de python para simular o sistema solar 
+# Programs-De-Python
+# Projetos de python para estudo 
 # por novoduscos e gabyneve - 28/07/2026  23:10
-# Teste de commit
