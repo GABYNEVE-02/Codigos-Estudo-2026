@@ -7,7 +7,7 @@ import pandas as pd
 from scipy import stats
 
 pasta_atual = os.path.dirname(os.path.abspath(__file__))
-caminho_csv = os.path.join(pasta_atual, "seeds.csv")
+caminho_csv = os.path.join(pasta_atual, "datasets", "seeds.csv")
 df = pd.read_csv(caminho_csv)
 
 media = np.mean(df.length)

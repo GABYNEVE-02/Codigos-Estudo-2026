@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 pasta = os.path.dirname(os.path.abspath(__file__))
-caminho = os.path.join(pasta, 'bike.csv')
+caminho = os.path.join(pasta, "datasets", "bike.csv")
 
 df = pd.read_csv(caminho)
 
