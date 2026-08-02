@@ -19,6 +19,10 @@ while True:
     if config == "1" or config == "correlação":
         c_eixox = input("Enter x-axis variable (temp, windspeed, hum, cnt): ").lower()
         c_eixoy = input("Enter y-axis variable (temp, windspeed, hum, cnt): ").lower()
+        
+        if c_eixox and c_eixoy not in df.columns or c_eixoy not in df.columns:
+            print("Invalid variables. Please choose from temp, windspeed, hum, cnt.")
+            continue
 
         A, B, r, p, se = stats.linregress(df[c_eixox], df[c_eixoy])
 
@@ -112,7 +116,7 @@ while True:
         )
         plt.plot(X, Y, color="green", label="Normal Distribution Fit")
         plt.title(
-            f"Count Distribution (Mean: {df[h_eixo].mean():.2f}, Std: {df[h_eixo].std():.2f})"
+            f"{h_eixo.capitalize()} Distribution (Mean: {df[h_eixo].mean():.2f}, Std: {df[h_eixo].std():.2f})"
         )
         plt.xlabel(h_eixo.capitalize())
         plt.ylabel("Frequency")
